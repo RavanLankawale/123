@@ -53,6 +53,7 @@ foreach ($data as $item) {
                 echo "#KODIPROP:inputstream.adaptive.manifest_type=mpd\n";
                 echo "#KODIPROP:inputstream.adaptive.license_type=clearkey\n";
                 echo "#KODIPROP:inputstream.adaptive.license_key=$drmkey\n";
+                echo "#KODIPROP:inputstream.adaptive.stream_headers=Range=bytes=0-\n";
                 echo "$video\n";
             }
         } else {
