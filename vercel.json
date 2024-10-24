@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1"
+    }
+  },
+  "routes": [
+
+    {
+      "src": "/",
+      "dest": "/api/playlist.php",
+      "headers": {
+        "Cache-Control": "max-age=84000, public",
+        "Content-Type": "application/vnd.apple.mpegurl"
+      }
+    }
+  ],
+  "regions": ["bom1"]
+}
